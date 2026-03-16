@@ -30,4 +30,11 @@ public class CalculadoraController {
         }
         return ResponseEntity.ok(objResultado);
     }
+
+    @GetMapping("/multiplicar")
+    public Resultado multiplicar(@RequestParam Integer numero1, @RequestParam Integer numero2){
+        Integer resultado = calculadoraService.multiplicar(numero1, numero2);
+        Resultado objResultado = new Resultado(resultado);
+        return objResultado;
+    }
 }

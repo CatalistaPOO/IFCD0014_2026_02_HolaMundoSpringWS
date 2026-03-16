@@ -12,7 +12,7 @@ public class SaludadorService {
         List<Saludo> saludos = new ArrayList<>();
         saludos.add(new Saludo("Hola, " + nombre));
         saludos.add(new Saludo("Hi, " + nombre));
-        saludos.add(new Saludo("Merhaba, " + nombre));
+        saludos.add(new Saludo("Merhaba (en turco), " + nombre));
         return saludos;
     }
 }
